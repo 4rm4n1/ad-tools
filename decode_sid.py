@@ -25,6 +25,5 @@ def decode_objectsid(base64_sid):
     sid_string = f"S-{revision}-{identifier_authority}-" + "-".join(str(s) for s in sub_authorities)
     return sid_string
 
-# Ejemplo
 input_line = input('Introduza el SID: ')
 print(decode_objectsid(input_line))
